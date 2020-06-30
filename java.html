@@ -265,6 +265,7 @@ img {
     <h5>I was contracted to build a plugin that allowed simple, and easy navigation of the Hub server, but also added features to the Hub server to make it more enjoyable, such as an equippable Elytra with unlimited rockets, and other cool features.</h5>
   </div>
 </div>
+
 <div class="container">
   <div class="mySlides">
     <div class="numbertext">1 / 7</div>
@@ -332,6 +333,37 @@ img {
     </div>
   </div>
 </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
 <div class="row">
   <div class="main">
