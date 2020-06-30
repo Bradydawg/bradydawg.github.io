@@ -151,7 +151,7 @@ li.button:hover {
 }
 
 * {box-sizing: border-box}
-.mySlides1, .mySlides2, .mySlides3, .mySlides4 {display: none}
+.mySlides1, .mySlides2 {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -272,30 +272,11 @@ img {vertical-align: middle;}
   <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 </div>
 
-<p>Slideshow 3:</p>
-<div class="slideshow-container">
-  <div class="mySlides3">
-    <img src="img_band_chicago.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides3">
-    <img src="img_band_la.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides3">
-    <img src="img_band_ny.jpg" style="width:100%">
-  </div>
-
-  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-</div>
-
 <script>
-var slideIndex = [1,1,1];
-var slideId = ["mySlides1", "mySlides2", "mySlides3"]
+var slideIndex = [1,1];
+var slideId = ["mySlides1", "mySlides2"]
 showSlides(1, 0);
 showSlides(1, 1);
-showSlides(1, 2);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
