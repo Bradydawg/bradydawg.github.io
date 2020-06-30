@@ -116,20 +116,20 @@ html {
   color: black;
 }
 
-.button {
+li.button {
+  background-color: DodgerBlue;
   border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
+  color: #000000;
+  padding: 12px 16px;
+  font-size: 16px;
   cursor: pointer;
-  width: 100%;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+   transition: 0.3s;
 }
-
-.button:hover {
-  background-color: #555;
+li.button:hover {
+  background-color: RoyalBlue;
 }
 
 @media screen and (max-width: 650px) {
@@ -166,7 +166,7 @@ html {
       <div class="container">
         <h2 class="ptitle">Java Projects</h2>
         <p class="ptitle">These are some of my projects written in Java. They are mostly made to run on a minecraft server as fully functional, and easily configurable plugins, but I am open to projects that are for other things.</p>
-        <button class="button><a href="java.html">Go to Java Projects</a></button>
+        <a href='java.html'><li class="button">Go to Java Projects</li></a>
       </div>
     </div>
   </div>
