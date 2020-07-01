@@ -74,6 +74,13 @@ html {
   background: rgba(120, 120, 120, 0.7)
 }
 
+ccenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 li.button {
   background-color: #707070;
   border: none;
