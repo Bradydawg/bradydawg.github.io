@@ -51,6 +51,12 @@ html {
   color: white;
 }
 
+.ccontainer::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 .ttop-left {
   position: absolute;
   top: 8px;
