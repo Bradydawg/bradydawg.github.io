@@ -73,6 +73,22 @@ html {
   color: white;
 }
 
+li.button {
+  background-color: #707070;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  text-align: center;
+  display: inline-block;
+   transition: 0.3s;
+}
+li.button:hover {
+  background-color: #3e3e3e;
+}
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
