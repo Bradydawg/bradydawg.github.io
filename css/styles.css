@@ -51,7 +51,7 @@ html {
   color: white;
 }
 
-.ccontainer::after, .row::after {
+.ccontainer::after, .rrow::after {
   content: "";
   clear: both;
   display: table;
