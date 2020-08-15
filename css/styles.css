@@ -104,6 +104,9 @@ section#main-body {
     min-height: 350px;
     background-color: #fff;
 }
+section { 
+  display: block;
+}
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
